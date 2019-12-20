@@ -27,7 +27,7 @@ func NewWorker(id, offset int64) (*Worker, error) {
     if id > maxWorkerID {
 		return nil, errors.New("worker id out of range")
     }
-    return &Worker{id: id}, nil
+    return &Worker{id: id, offset: offset}, nil
 }
 
 // Generate 生成ID
