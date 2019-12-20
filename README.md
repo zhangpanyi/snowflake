@@ -15,7 +15,7 @@ import (
 
 worker, err := snowflake.NewWorker(1, 0)
 if err != nil {
-	panic(err)
+    panic(err)
 }
 ```
 Create a instance of snowflake as shown above which will be used to generate snowflake ids afterward.
